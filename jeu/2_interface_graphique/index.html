@@ -1,0 +1,779 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="../../img/firefox.svg" rel="icon"/>
+<meta content="mkdocs-1.4.1, mkdocs-material-8.5.7" name="generator"/>
+<title>Interface Graphique - Site Web Projet NSI Mastermind</title>
+<link href="../../assets/stylesheets/main.20d9efc8.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.cbb835fc.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<link href="../../stylesheets/extra.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gdesc-inner { font-size: 0.75rem; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            
+                .gscrollbar-fixer { padding-right: 15px; }
+                </style><script src="../../assets/javascripts/glightbox.min.js"></script></head>
+<body data-md-color-accent="" data-md-color-primary="" data-md-color-scheme="default" dir="ltr">
+<script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#interface-graphique">
+          Aller au contenu
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="En-tête" class="md-header__inner md-grid">
+<a aria-label="Site Web Projet NSI Mastermind" class="md-header__button md-logo" data-md-component="logo" href="../.." title="Site Web Projet NSI Mastermind">
+<img alt="logo" src="../../img/index.svg"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            Site Web Projet NSI Mastermind
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Interface Graphique
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="" data-md-color-scheme="default" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"></path></svg>
+</label>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"></path></svg>
+</label>
+</form>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--integrated" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="Site Web Projet NSI Mastermind" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="Site Web Projet NSI Mastermind">
+<img alt="logo" src="../../img/index.svg"/>
+</a>
+    Site Web Projet NSI Mastermind
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../..">
+        Introduction du projet
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2">
+          Jeu
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Jeu" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+          Jeu
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../0_construction_du_jeu/">
+        Construction du Jeu
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../1_preparation_du_fichier/">
+        Le Fichier .py
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Interface Graphique
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+        Interface Graphique
+      </a>
+<nav aria-label="Table des matières" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#construire-la-fenetre">
+     Construire la fenêtre 
+  </a>
+<nav aria-label=" Construire la fenêtre " class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#creation-de-la-fenetre-mere">
+     Création de la fenêtre mère 
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#division-de-la-fenetre-mere">
+     Division de la fenêtre mère 
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#creation-delements-au-sein-des-conteneurs">
+     Création d'éléments au sein des conteneurs 
+  </a>
+<nav aria-label=" Création d'éléments au sein des conteneurs " class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#differentes-classes-appelees-lors-des-layouts">
+     Différentes classes appelées lors des layouts 
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../3_code_final/">
+        Code final
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../4_Fin/">
+        Le résultat final
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="interface-graphique">Interface Graphique</h1>
+<blockquote>
+<p>C'est l'étape de la création de la fenêtre</p>
+</blockquote>
+<h2 id="construire-la-fenetre"><u> Construire la fenêtre </u></h2>
+<blockquote>
+<p>la routine pour démarrer le programme</p>
+</blockquote>
+<h3 id="creation-de-la-fenetre-mere"><u> Création de la <strong>fenêtre mère</strong> </u></h3>
+<div class="highlight"><span class="filename">routine de démarrage</span><pre><span></span><code><span class="n">app</span> <span class="o">=</span> <span class="n">QApplication</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">)</span><span class="c1">#on créé la routine de démarrage propre à PySide6</span>
+<span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">global</span> <span class="n">run</span><span class="p">,</span><span class="n">window</span> <span class="c1">#on passe en global la fonction run et la variable window</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span><span class="c1">#lorsqu'on veut rejouer : run(1)</span>
+        <span class="k">del</span> <span class="n">window</span> <span class="c1">#on supprime la fenêtre déjà existante</span>
+    <span class="n">window</span> <span class="o">=</span> <span class="n">MainWindow</span><span class="p">()</span><span class="c1">#on créé une fenêtre</span>
+    <span class="n">window</span><span class="o">.</span><span class="n">show</span><span class="p">()</span><span class="c1">#on la montre</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span><span class="c1">#lors d'un simple démarrage : le jeu est lancé via le fichier</span>
+        <span class="n">window</span><span class="o">.</span><span class="n">messagebox</span><span class="p">()</span><span class="c1">#on montre la box de message contenant les règles pour jouer</span>
+        <span class="n">app</span><span class="o">.</span><span class="n">exec</span><span class="p">()</span><span class="c1">#on lance la routine de démarrage</span>
+</code></pre></div>
+<ul>
+<li>pour n == 0 : c'est un simple démarrage (quand on lance le jeu depuis le fichier) et on créé la fenêtre : window = MainWindow()</li>
+<li>pour n == 1 : c'est quand on veut rejouer : on supprime la fenêtre de jeu, et on relance la fonction : elle re-setUp la fenêtre</li>
+</ul>
+<p><u> Avec MainWindow() correspondant à la classe: </u></p>
+<div class="highlight"><span class="filename">MainWindow()</span><pre><span></span><code><span class="k">class</span> <span class="nc">MainWindow</span><span class="p">(</span><span class="n">QMainWindow</span><span class="p">):</span><span class="c1">#classe MainWindow héritant de QMainWindow de PySide6 : fenêtre principale dans laquelle on met les éléments</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span><span class="c1">#propriétés définies à la création</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span><span class="c1">#on hérite dans MainWindow les propriétés __init__ de QMainWindow</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fenetre</span><span class="p">()</span><span class="c1">#on appelle la fonction fenetre</span>
+    <span class="k">def</span> <span class="nf">messagebox</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span><span class="c1">#fonction message qui montre la box de message contenant les règles pour jouer</span>
+            <span class="n">message</span> <span class="o">=</span> <span class="n">QMessageBox</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span><span class="c1">#on créé la box de message</span>
+            <span class="n">message</span><span class="o">.</span><span class="n">setWindowTitle</span><span class="p">(</span><span class="s2">"Avant de Commencer à Jouer!"</span><span class="p">)</span><span class="c1">#on définit un titre à la fenêtre de la MessageBox</span>
+            <span class="c1">#---------------- On met à l'intérieur le texte des règles ----------------------------------------------------------------------</span>
+            <span class="n">message</span><span class="o">.</span><span class="n">setText</span><span class="p">(</span><span class="s2">"Le Mastermind ici présent est adapté à une machine : Il y a donc quelques règles à savoir avant de commencer! "</span>
+            <span class="s2">"Tout d'abord pour démarrer le jeu il faut cliquer sur le bouton Jouer! "</span>
+            <span class="s2">"Là vous devrez trouver les couleurs que la machine a choisie : Pour cela vous avez 4 boutons correspondants aux 4 récipients de couleurs à sélectionner pour que lorsque vous cliquerez sur une couleur de la palette, la couleur soit mise dans le récipient correspondant. Une fois cela fait, appuyez sur le bouton Comparer! Vous aurez des indications sur votre essai : le nombre de points verts correspond au nombre de couleurs bonnes mals placées et le nombre de points rouges correspond au nombre de couleurs bonnes biens placées."</span>
+            <span class="s2">"A savoir! La machine ne choisit jamais 2 mêmes chiffres et donc, ne proposez jamais 2 fois le même chiffre sinon il y aura un code d'erreur!"</span>
+            <span class="s2">"Lorsque vous gagnez un message apparaitra pour vous le faire savoir! A vous de jouer maintenant et que la chance soit avec vous!"</span><span class="p">)</span>
+            <span class="n">message</span><span class="o">.</span><span class="n">exec</span><span class="p">()</span><span class="c1">#on exécute la MessageBox : on la montre</span>
+    <span class="k">def</span> <span class="nf">fenetre</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span><span class="c1"># Mise en place de la fenêtre</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setWindowTitle</span><span class="p">(</span><span class="s2">"Mastermind"</span><span class="p">)</span><span class="c1">#On définit un titre à la fenêtre MainWindow()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">move</span><span class="p">(</span><span class="mi">250</span><span class="p">,</span><span class="mi">50</span><span class="p">)</span><span class="c1">#on la déplace sur l'écran</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setFixedSize</span><span class="p">(</span><span class="mi">1000</span><span class="p">,</span><span class="mi">700</span><span class="p">)</span><span class="c1">#on définit une taille non redéfinissable</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setWindowIcon</span><span class="p">(</span><span class="n">QtGui</span><span class="o">.</span><span class="n">QIcon</span><span class="p">(</span><span class="s1">'img/master.png'</span><span class="p">))</span><span class="c1">#On met une icône</span>
+</code></pre></div>
+<h3 id="division-de-la-fenetre-mere"><u> Division de la <strong>fenêtre mère</strong> </u></h3>
+<blockquote>
+<p>Création de plusieurs parties à l'intérieur de MainWindow()</p>
+</blockquote>
+<div class="admonition info">
+<p class="admonition-title">Différentes parties de QMainWindow()</p>
+<p>Dans la classe MainWindow héritant de QMainWindow provenant de PySide6, <br/>
+il existe plusieurs parties dans laquelle il est possible d'ajouter des éléments:</p>
+</div>
+<ul>
+<li>La Barre de Menu</li>
+<li>La Barre d'Outils</li>
+<li>Le Widget Central</li>
+<li>La barre de Statut</li>
+</ul>
+<p>Pour ma part j'ai créé une QFrame dans le Widget Central contenant ensuite un QGridLayout : une grille avec lignes et colonnes définissables</p>
+<p>Mais afin de ne pas <strong>surcharger</strong> mon programme j'ai créé une fonction Creation() dans MainWindow() que j'appellerai pour construire ma fenêtre
+<div class="highlight"><span class="filename">Creation()</span><pre><span></span><code><span class="k">def</span> <span class="nf">Creation</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span><span class="c1">#Appel des fonctions servant à la création de MainWindow</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">Setup</span><span class="p">()</span><span class="c1">#Appel de la fonction SetUp qui sépare la fenêtre</span>
+</code></pre></div>
+<div class="highlight"><span class="filename">Séparation de la fenêtre</span><pre><span></span><code><span class="k">def</span> <span class="nf">Setup</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="c1">#Set up des compartiments dans les différents compartiments</span>
+    <span class="c1">#---------------Mise en place d'un Compartiment dans la partie centrale</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">Frame</span> <span class="o">=</span> <span class="n">QFrame</span><span class="p">()</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">Frame</span><span class="o">.</span><span class="n">setAttribute</span><span class="p">(</span><span class="n">Qt</span><span class="o">.</span><span class="n">WA_StyledBackground</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">Frame</span><span class="o">.</span><span class="n">setStyleSheet</span><span class="p">(</span><span class="s2">"background-color : #777777"</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">Frame</span><span class="o">.</span><span class="n">setContentsMargins</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">setCentralWidget</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">Frame</span><span class="p">)</span><span class="c1"># Compartiment parent</span>
+    <span class="c1"># Creation des layout : conteneurs des widgets dans les compartiments</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">GridFrame</span> <span class="o">=</span> <span class="n">QGridLayout</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">Frame</span><span class="p">)</span>
+    <span class="c1">#---------------Compartiments enfants de self.GridFrame---------------------</span>
+    <span class="c1">#---------------- Récipient Couleurs ---------------------------------------</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">dessin</span> <span class="o">=</span> <span class="n">QWidget</span><span class="p">()</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">dessin</span><span class="o">.</span><span class="n">setFixedSize</span><span class="p">(</span><span class="mi">510</span><span class="p">,</span><span class="mi">620</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">dessin</span><span class="o">.</span><span class="n">setStyleSheet</span><span class="p">(</span><span class="s2">"background : #444444;"</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">GridFrame</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">dessin</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+    <span class="c1">#---------------- Elements additionnels ------------------------------------</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">WidgetDroite</span> <span class="o">=</span> <span class="n">QWidget</span><span class="p">()</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">WidgetDroite</span><span class="o">.</span><span class="n">setFixedSize</span><span class="p">(</span><span class="mi">490</span><span class="p">,</span><span class="mi">620</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">WidgetDroite</span><span class="o">.</span><span class="n">setStyleSheet</span><span class="p">(</span><span class="s2">"background : #444444; color : white"</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">GridFrame</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">WidgetDroite</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+    <span class="c1">#---------------Mise en place d'un Compartiment dans la barre de statut</span>
+    <span class="n">Status</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">statusBar</span><span class="p">()</span><span class="c1"># Compartiment parent défini en même temps que la création</span>
+    <span class="n">Status</span><span class="o">.</span><span class="n">setStyleSheet</span><span class="p">(</span><span class="s2">"background : red; color : white"</span><span class="p">)</span><span class="c1"># Style perso</span>
+    <span class="n">Status</span><span class="o">.</span><span class="n">showMessage</span><span class="p">(</span><span class="s2">"Ceci est un Mastermind!"</span><span class="p">)</span><span class="c1"># Message</span>
+    <span class="c1">#---------------Mise en place d'un Compartiment dans le menu</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">Menu</span> <span class="o">=</span> <span class="n">QWidget</span><span class="p">()</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">Menu</span><span class="o">.</span><span class="n">setStyleSheet</span><span class="p">(</span><span class="s2">"background : black; color : white"</span><span class="p">)</span><span class="c1"># Style perso</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">setMenuWidget</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">Menu</span><span class="p">)</span><span class="c1"># Compartiment parent</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">Menu</span><span class="o">.</span><span class="n">setFixedHeight</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span><span class="c1"># Taille</span>
+</code></pre></div>
+<u> <strong>On remarque :</strong> </u></p>
+<ul>
+<li>self.Frame est une QFrame placée dans le Widget Central qui prend l'espace disponible, <br/>
+on active sa fonction de coloriage et on la colorie en gris</li>
+<li>self.GridFrame est une QGridFrame ayant pour parent self.Frame donc elle est automatiquement mise dans QFrame <br/>
+C'est dans cette GridFrame qu'on va organiser tous les sous éléments (= les nouveaux conteneurs)</li>
+<li>self.dessin est un QWidget ayant une taille de 510 sur 620 px avec une couleur de fond gris foncée <br/>
+Par la suite self.dessin est mis dans self.GridFrame à la colonne 0 (la 1ère) et ligne 0 (la 1ère)
+self.dessin accueillera les ronds servant aux tentatives et les indications sur ces dernières</li>
+<li>self.WidgetDroite est un QWidget ayant une taille de 490 sur 620 px avec la même couleur de fond que self.dessin
+Ce Widget se situe dans self.GridFrame à la colonne 1 et la ligne 0
+self.WidgetDroite sert à mettre la palette de couleur pour choisir et les boutons pour mettre la couleur dans la case souhaitée</li>
+<li>Status est la Barre de Statut, sa couleur de fond est rouge et celle d'écriture blanche, on met un message informatif</li>
+<li>self.Menu est un QWidget situé dans le Widget de Menu ayant une couleur de fond noire et une couleur d'écriture blanche <br/>
+Sa hauteur est de 50</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Séparation des éléments</p>
+<p><strong>Une fois tous les conteneurs créées et organisés comme on le souhaite
+on va créer de nouvelles grilles qui contiendront de nouveaux éléments :<br/>
+Une fois que tout sera prêt, on pourra créer de nouvelles classes qui auront une instance (=objet)
+au sein de MainWindow() la classe initiale</strong></p>
+</div>
+<h3 id="creation-delements-au-sein-des-conteneurs"><u> Création <strong>d'éléments au sein des conteneurs</strong> </u></h3>
+<blockquote>
+<p>Une fois que nous avons séparé notre fenêtre en plusieurs parties: StatusBar, MenuBar </p>
+<p>mais aussi le CentralWidget dans lequel on met une QFrame puis une QGridLayout et dans cette QGridLayout on met WidgetDroite et dessin</p>
+</blockquote>
+<p>En séparant les nouveaux Widget : WidgetDroite et dessin on peut organiser de nouveaux éléments:</p>
+<ul>
+<li>En plaçant d'abord des QHBoxLayout/QVBoxLayout/QGridLayout et à l'intérieur de ces grilles mettre les éléments</li>
+</ul>
+<p><u> <strong>On modifie la fonction Creation() de MainWindow():</strong> </u></p>
+<div class="highlight"><span class="filename">Création d'éléments au sein des conteneurs</span><pre><span></span><code><span class="k">def</span> <span class="nf">Creation</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span><span class="c1">#Appel des fonctions servant à la création de MainWindow</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">Setup</span><span class="p">()</span><span class="c1">#Appel de la fonction SetUp qui sépare la fenêtre</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">Content</span><span class="p">()</span><span class="c1">#Créé les éléments de texte = QLabel</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">Layout</span><span class="p">()</span><span class="c1">#Créé les différents layout servant à organiser les éléments</span>
+</code></pre></div>
+<blockquote>
+<p>la fonction Setup(), nous l'avons vu juste en haut mais par contre Content() et Layout() restent à découvrir</p>
+</blockquote>
+<p><strong>La Fonction Content()</strong>:
+<div class="highlight"><span class="filename">Content()</span><pre><span></span><code><span class="k">def</span> <span class="nf">Content</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span><span class="c1"># Creation d'éléments</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="n">QLabel</span><span class="p">(</span><span class="s2">"Barre de Menu!"</span><span class="p">)</span><span class="c1">#Création d'un QLabel ayant pour texte "Barre de Menu!"</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">setAlignment</span><span class="p">(</span><span class="n">Qt</span><span class="o">.</span><span class="n">AlignCenter</span><span class="p">)</span><span class="c1">#On aligne le texte au milieu du conteneur</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">text_palette</span> <span class="o">=</span> <span class="n">QLabel</span><span class="p">(</span><span class="s2">"Palette"</span><span class="p">)</span><span class="c1">#Création d'un QLabel ayant pour texte "Palette" =&gt; indique la palette</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">text_palette</span><span class="o">.</span><span class="n">setAlignment</span><span class="p">(</span><span class="n">Qt</span><span class="o">.</span><span class="n">AlignCenter</span><span class="p">)</span><span class="c1">#On aligne le texte au milieu du conteneur</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">text_palette</span><span class="o">.</span><span class="n">setStyleSheet</span><span class="p">(</span><span class="s2">"font-weight: bold; font family: Arial; font-size: 28px"</span><span class="p">)</span><span class="c1">#Style défini : gras, Arial, taille : 28px</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">text_bouton</span> <span class="o">=</span> <span class="n">QLabel</span><span class="p">(</span><span class="s2">"Boutons pour sélectionner la case"</span><span class="p">)</span><span class="c1">#Création d'un QLabel ayant pour texte "Boutons pour sélectionner la case" =&gt; indique les boutons</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">text_bouton</span><span class="o">.</span><span class="n">setAlignment</span><span class="p">(</span><span class="n">Qt</span><span class="o">.</span><span class="n">AlignCenter</span><span class="p">)</span><span class="c1">#On aligne le texte au milieu du conteneur</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">text_bouton</span><span class="o">.</span><span class="n">setStyleSheet</span><span class="p">(</span><span class="s2">"font-weight: bold; font family: Arial; font-size: 28px"</span><span class="p">)</span><span class="c1">#Style défini : gras, Arial, taille : 28px</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">text_bouton2</span> <span class="o">=</span> <span class="n">QLabel</span><span class="p">(</span><span class="s2">"sur laquelle mettre la couleur"</span><span class="p">)</span><span class="c1">#Création d'un QLabel ayant pour texte "sur laquelle mettre la couleur" =&gt; suit le QLabel précédent, on revient à la ligne</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">text_bouton2</span><span class="o">.</span><span class="n">setAlignment</span><span class="p">(</span><span class="n">Qt</span><span class="o">.</span><span class="n">AlignCenter</span><span class="p">)</span><span class="c1">#On aligne le texte au milieu du conteneur</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">text_bouton2</span><span class="o">.</span><span class="n">setStyleSheet</span><span class="p">(</span><span class="s2">"font-weight: bold; font family: Arial; font-size: 30px"</span><span class="p">)</span><span class="c1">#Style défini : gras, Arial, taille : 30px</span>
+</code></pre></div></p>
+<p><strong>La Fonction Content() créé des éléments de texte (= QLabel) en leur définissant:</strong></p>
+<ul>
+<li>un texte</li>
+<li>un alignement (ici center)</li>
+<li>et parfois un style</li>
+</ul>
+<p>Et ces éléments seront mis dans leur layout correspondant avec Layout()</p>
+<hr/>
+<p><strong>La Fonction Layout()</strong>:
+<div class="highlight"><span class="filename">Layout()</span><pre><span></span><code><span class="k">def</span> <span class="nf">Layout</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="c1">#---------------Création d'un layout dans le menu-------------------</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">layout_menu</span> <span class="o">=</span> <span class="n">QHBoxLayout</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">Menu</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">layout_menu</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+    <span class="c1">#--------------Appel des fonctions qui mettent en place les différents éléments dans leurs conteneurs</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">layout_WidgetDroite</span><span class="p">()</span><span class="c1">#Avec les layouts, organise et affiche les différents éléments dans le WidgetDroite</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">layout_dessin</span><span class="p">()</span><span class="c1">#Avec les layouts, organise et affiche les différents éléments dans dessin</span>
+</code></pre></div></p>
+<hr/>
+<p><u> La Fonction Layout() créé un QHBoxLayout dans le MenuWidget et y ajoute le texte Menu défini dans Content() </u> <br/></p>
+<p><strong>Mais après elle appelle 2 fonctions qui vont créer de nouveaux layouts et y placer des éléments</strong></p>
+<div class="highlight"><span class="filename">layout_WidgetDroite()</span><pre><span></span><code><span class="k">def</span> <span class="nf">layout_WidgetDroite</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span><span class="c1">#Créé différents layouts dans WidgetDroite</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">layout_droite</span> <span class="o">=</span> <span class="n">QVBoxLayout</span><span class="p">()</span><span class="c1">#layout principal vertical =&gt; parent des nouveaux layouts</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">WidgetDroite</span><span class="o">.</span><span class="n">setLayout</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">layout_droite</span><span class="p">)</span><span class="c1">#On le place dans WidgetDroite</span>
+    <span class="c1">#-----------------Texte Bouton ------------------#Tous les éléments créés seront en rapport avec le texte bouton</span>
+    <span class="n">Widget_Texte_Bouton</span> <span class="o">=</span> <span class="n">QWidget</span><span class="p">()</span><span class="c1">#On créé un Widget pour accueillir le texte des boutons =&gt; parent des éléments bouton créé dans Content()</span>
+    <span class="n">Widget_Texte_Bouton</span><span class="o">.</span><span class="n">setFixedSize</span><span class="p">(</span><span class="mi">500</span><span class="p">,</span><span class="mi">110</span><span class="p">)</span><span class="c1">#On définit une taille</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">layout_droite</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="n">Widget_Texte_Bouton</span><span class="p">)</span><span class="c1">#On l'ajoute dans le layout principal</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">layout_txt_bouton</span> <span class="o">=</span> <span class="n">QVBoxLayout</span><span class="p">()</span><span class="c1">#On créé un layout dans le Widget créé</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">layout_txt_bouton</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">text_bouton</span><span class="p">)</span><span class="c1">#On y a joute les textes</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">layout_txt_bouton</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">text_bouton2</span><span class="p">)</span><span class="c1">#Pareil</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">layout_txt_bouton</span><span class="o">.</span><span class="n">setSpacing</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="c1">#Espace entre les éléments</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">layout_txt_bouton</span><span class="o">.</span><span class="n">setContentsMargins</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span><span class="c1">#Espace externe du layout</span>
+    <span class="n">Widget_Texte_Bouton</span><span class="o">.</span><span class="n">setLayout</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">layout_txt_bouton</span><span class="p">)</span><span class="c1">#Layout mis dans le Widget créé</span>
+    <span class="n">Widget_Texte_Bouton</span><span class="o">.</span><span class="n">setContentsMargins</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">40</span><span class="p">)</span><span class="c1">#Espace externe des différents éléments</span>
+    <span class="c1">#-----------------Layout Boutons ----------------</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">layout_bouton</span> <span class="o">=</span> <span class="n">QHBoxLayout</span><span class="p">()</span><span class="c1">#Creation du layout Bouton avec les boutons</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">bouton</span><span class="p">()</span><span class="c1">#Création des boutons + Boutons mis dans le layout_bouton</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">layout_droite</span><span class="o">.</span><span class="n">addLayout</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">layout_bouton</span><span class="p">)</span><span class="c1">#Layout bouton mis dans le layout_droite</span>
+    <span class="c1">#Palette mise dans le layout de droite</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">palette</span><span class="p">()</span><span class="c1">#Creation de la palette via appel d'une fonction</span>
+    <span class="c1">#-----------------Texte Palette -----------------</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">layout_droite</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">text_palette</span><span class="p">)</span><span class="c1">#Element défini dans Content() mis dans le layout principal</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">layout_droite</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">Widget</span><span class="p">)</span><span class="c1">#Palette mise dans le layout_droite</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">boutons</span><span class="p">()</span><span class="c1">#Appel de la fonctions boutons()</span>
+    <span class="n">Hlayout1</span> <span class="o">=</span> <span class="n">QHBoxLayout</span><span class="p">()</span><span class="c1">#Layout horizontal</span>
+    <span class="n">Hlayout1</span><span class="o">.</span><span class="n">setAlignment</span><span class="p">(</span><span class="n">Qt</span><span class="o">.</span><span class="n">AlignCenter</span><span class="p">)</span><span class="c1">#Alignement centre</span>
+    <span class="n">Hlayout1</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">jouer</span><span class="p">)</span><span class="c1">#On ajoute le bouton jouer</span>
+    <span class="n">Hlayout2</span> <span class="o">=</span> <span class="n">QHBoxLayout</span><span class="p">()</span><span class="c1">#Layout horizontal</span>
+    <span class="n">Hlayout2</span><span class="o">.</span><span class="n">setAlignment</span><span class="p">(</span><span class="n">Qt</span><span class="o">.</span><span class="n">AlignCenter</span><span class="p">)</span><span class="c1">#Alignement centre</span>
+    <span class="n">Hlayout2</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">comparer</span><span class="p">)</span><span class="c1">#On ajoute le bouton comparer</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">layout_droite</span><span class="o">.</span><span class="n">addLayout</span><span class="p">(</span><span class="n">Hlayout1</span><span class="p">)</span><span class="c1">#Ajout dans le layout principal</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">layout_droite</span><span class="o">.</span><span class="n">addLayout</span><span class="p">(</span><span class="n">Hlayout2</span><span class="p">)</span><span class="c1">#Ajout dans le layout principal</span>
+</code></pre></div>
+<hr/>
+<div class="highlight"><span class="filename">layout_dessin</span><pre><span></span><code><span class="k">def</span> <span class="nf">layout_dessin</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span><span class="c1">#Layout du Widget dessin </span>
+    <span class="c1">#----------------- Layout de Gauche --------------- : emplacements couleurs</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">layout_gauche</span> <span class="o">=</span> <span class="n">QHBoxLayout</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">dessin</span><span class="p">)</span><span class="c1">#On créé et on définit le parent du QHBoxLayout</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">layout_g_gauche</span> <span class="o">=</span> <span class="n">QVBoxLayout</span><span class="p">()</span><span class="c1">#On créé une QVBoxLayout pour accueillir les cercles</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">layout_gauche</span><span class="o">.</span><span class="n">addLayout</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">layout_g_gauche</span><span class="p">)</span><span class="c1">#On l'ajoute au layout de base</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">layout_d_gauche</span> <span class="o">=</span> <span class="n">QVBoxLayout</span><span class="p">()</span><span class="c1">#On créé une QVBoxLayout pour accueillir les indications : points verts/rouges</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">layout_gauche</span><span class="o">.</span><span class="n">addLayout</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">layout_d_gauche</span><span class="p">)</span><span class="c1">#On l'ajoute au layout de base</span>
+</code></pre></div>
+<blockquote>
+<p>On remarque dans layout_WidgetDroite(), on appelle d'autres fonctions : </p>
+</blockquote>
+<ul>
+<li>bouton() =&gt; bouton sélecteur de la case où mettre la couleur$</li>
+<li>boutons() =&gt; pour jouer et comparer</li>
+<li>palette() =&gt; pour choisir la couleur</li>
+</ul>
+<hr/>
+<p><u> <strong>Allons donc les voir :</strong> </u></p>
+<h4 id="differentes-classes-appelees-lors-des-layouts"><u> Différentes classes appelées lors des layouts </u></h4>
+<p><strong>On fait appel à la fonction bouton()</strong></p>
+<div class="highlight"><span class="filename">bouton()</span><pre><span></span><code><span class="k">def</span> <span class="nf">bouton</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span><span class="c1">#On créé les boutons sélecteurs</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">bouton_locked</span> <span class="o">=</span> <span class="mi">0</span><span class="c1">#Variable qui définit quel bouton est par défaut sélectionné</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">bouton1</span> <span class="o">=</span> <span class="n">Button</span><span class="p">(</span><span class="s2">"0"</span><span class="p">)</span><span class="c1">#Création d'un objet de la classe Button</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">bouton2</span> <span class="o">=</span> <span class="n">Button</span><span class="p">(</span><span class="s2">"1"</span><span class="p">)</span><span class="c1">#Création d'un objet de la classe Button</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">bouton3</span> <span class="o">=</span> <span class="n">Button</span><span class="p">(</span><span class="s2">"2"</span><span class="p">)</span><span class="c1">#Création d'un objet de la classe Button</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">bouton4</span> <span class="o">=</span> <span class="n">Button</span><span class="p">(</span><span class="s2">"3"</span><span class="p">)</span><span class="c1">#Création d'un objet de la classe Button</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">layout_bouton</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">bouton1</span><span class="p">)</span><span class="c1">#on les ajoute au layout bouton créé dans layout_WidgetDroite()</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">layout_bouton</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">bouton2</span><span class="p">)</span><span class="c1">#on les ajoute au layout bouton créé dans layout_WidgetDroite()</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">layout_bouton</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">bouton3</span><span class="p">)</span><span class="c1">#on les ajoute au layout bouton créé dans layout_WidgetDroite()</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">layout_bouton</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">bouton4</span><span class="p">)</span><span class="c1">#on les ajoute au layout bouton créé dans layout_WidgetDroite()</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">bouton1</span><span class="o">.</span><span class="n">setChecked</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span><span class="c1">#On définit si ils sont sélectionnés ou non</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">bouton2</span><span class="o">.</span><span class="n">setChecked</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span><span class="c1">#On définit si ils sont sélectionnés ou non</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">bouton3</span><span class="o">.</span><span class="n">setChecked</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span><span class="c1">#On définit si ils sont sélectionnés ou non</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">bouton4</span><span class="o">.</span><span class="n">setChecked</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span><span class="c1">#On définit si ils sont sélectionnés ou non</span>
+</code></pre></div>
+<p><u> On fait appel à la classe Button <img alt="🤔" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f914.svg" title=":thinking:"> allons donc la voir! </img></u></p>
+<div class="highlight"><span class="filename">Classe Button()</span><pre><span></span><code><span class="k">class</span> <span class="nc">Button</span><span class="p">(</span><span class="n">QPushButton</span><span class="p">):</span><span class="c1">#Classe qui créé des boutons et qui hérite de QPushButton</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">texte</span><span class="p">):</span><span class="c1">#Initialisation</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span><span class="c1">#On recupère les propriétés de QPushButton</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">texte</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">texte</span><span class="p">)</span><span class="c1">#On recupère le Str passé en paramètre lors de la création en ints</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setFixedSize</span><span class="p">(</span><span class="mi">75</span><span class="p">,</span><span class="mi">30</span><span class="p">)</span><span class="c1">#Taille fixé</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">button_is_checked</span> <span class="o">=</span> <span class="kc">True</span><span class="c1">#On définit il est enfoncé</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setCheckable</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span><span class="c1">#On définit qu'il peut-être enfoncé</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setText</span><span class="p">(</span><span class="n">texte</span><span class="p">)</span><span class="c1">#On définit son texte par le Str passé en paramètre lors de la création</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">clicked</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">the_button_was_toggled</span><span class="p">)</span><span class="c1">#Au click on appelle une fonction</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setStyleSheet</span><span class="p">(</span><span class="s2">"background-color: black;"</span><span class="p">)</span><span class="c1">#On définit du style</span>
+
+    <span class="k">def</span> <span class="nf">the_button_was_toggled</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span><span class="c1">#Lorsqu'on clique</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setChecked</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span><span class="c1">#On enfonce le bouton</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Bouton sélectionné : </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">texte</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span><span class="c1">#Debug</span>
+        <span class="n">window</span><span class="o">.</span><span class="n">toggle</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">texte</span><span class="p">)</span><span class="c1">#On appelle une fonction qui sert à désenfoncer les autres boutons : un à la fois enfoncé</span>
+        <span class="n">window</span><span class="o">.</span><span class="n">bouton_locked</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">texte</span><span class="c1">#bouton_locked prend la valeur du bouton enfoncé : self.texte</span>
+
+    <span class="k">def</span> <span class="nf">toggled</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span><span class="c1">#lors de l'appel on desenfonce le bouton</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setChecked</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+</code></pre></div>
+<blockquote>
+<p>window.bouton_locked sert à savoir quel bouton est enfoncé pour savoir dans quelle case mettre la couleur</p>
+</blockquote>
+<p><u> allons voir la fonction toggle() </u></p>
+<p><div class="highlight"><span class="filename">toggle()</span><pre><span></span><code><span class="k">def</span> <span class="nf">toggle</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">nombre</span><span class="p">):</span><span class="c1">#paramètre un nombre</span>
+    <span class="c1">#-------- Si le nombre n'est pas celui du bouton, on le désactive en appelant la fonction propre à l'objet</span>
+    <span class="k">if</span> <span class="n">nombre</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">bouton1</span><span class="o">.</span><span class="n">toggled</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">nombre</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">bouton2</span><span class="o">.</span><span class="n">toggled</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">nombre</span> <span class="o">!=</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">bouton3</span><span class="o">.</span><span class="n">toggled</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">nombre</span> <span class="o">!=</span> <span class="mi">3</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">bouton4</span><span class="o">.</span><span class="n">toggled</span><span class="p">()</span>
+</code></pre></div>
+<strong>Et l'appel à la fonction Boutons() <img alt="🤔" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f914.svg" title=":thinking:"> :</img></strong>
+<div class="highlight"><span class="filename">Classe Boutons()</span><pre><span></span><code><span class="k">def</span> <span class="nf">boutons</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span><span class="c1">#Fonctions boutons qui créé les boutons pour avancer dans le jeu</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">comparer</span> <span class="o">=</span> <span class="n">Button_principaux</span><span class="p">(</span><span class="s2">"Comparer!"</span><span class="p">)</span><span class="c1">#On créé le bouton pour comparer</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">comparer</span><span class="o">.</span><span class="n">disable</span><span class="p">()</span><span class="c1">#On le désactive pour pas pouvoir cliquer dessus</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">jouer</span> <span class="o">=</span> <span class="n">Button_principaux</span><span class="p">(</span><span class="s2">"Jouer!"</span><span class="p">)</span><span class="c1">#On créé le bouton jouer</span>
+</code></pre></div>
+<u> On fait appel à la Classe Button_Principaux() </u></p>
+<p><div class="highlight"><span class="filename">Classe Button_principaux</span><pre><span></span><code><span class="k">class</span> <span class="nc">Button_principaux</span><span class="p">(</span><span class="n">QPushButton</span><span class="p">):</span><span class="c1">#Classe créant des boutons hériant de QPushButton</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">texte</span><span class="p">):</span><span class="c1">#Initialisation</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span><span class="c1">#Héritage de QPushButton</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setFixedSize</span><span class="p">(</span><span class="mi">400</span><span class="p">,</span><span class="mi">60</span><span class="p">)</span><span class="c1">#Taille fixée</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setText</span><span class="p">(</span><span class="n">texte</span><span class="p">)</span><span class="c1">#Text défini par la variable passée en paramètre</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">clicked</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">click_button</span><span class="p">)</span><span class="c1">#Click lié à une fonction</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setStyleSheet</span><span class="p">(</span><span class="s2">"background-color: #111111;"</span><span class="p">)</span><span class="c1">#Couleur de fond définie</span>
+
+    <span class="k">def</span> <span class="nf">click_button</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span><span class="c1">#A l'appel</span>
+        <span class="c1"># condition pour différencier les 2 boutons</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">text</span><span class="p">()</span> <span class="o">==</span> <span class="s2">"Jouer!"</span><span class="p">:</span><span class="c1"># Si le bouton est =&gt; Jouer!</span>
+            <span class="n">window</span><span class="o">.</span><span class="n">tirage</span><span class="p">()</span><span class="c1">#On appelle une fonction de MainWindow pour jouer</span>
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">text</span><span class="p">()</span> <span class="o">==</span> <span class="s2">"Rejouer!"</span><span class="p">:</span><span class="c1"># Si le bouton est =&gt; Rejouer!</span>
+            <span class="k">global</span> <span class="n">run</span><span class="c1">#on appelle la fonction globale run</span>
+            <span class="n">run</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="c1">#on execute la procédure de redémarrage</span>
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">text</span><span class="p">()</span> <span class="o">==</span> <span class="s2">"Comparer!"</span><span class="p">:</span><span class="c1"># SI le bouton est =&gt; Comparer!</span>
+            <span class="n">window</span><span class="o">.</span><span class="n">compare</span><span class="p">()</span><span class="c1">#On appelle la fonction de MainWindow pour comparer </span>
+
+    <span class="k">def</span> <span class="nf">disable</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span><span class="c1">#On désactive et on met aucun texte : ""</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setDisabled</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setText</span><span class="p">(</span><span class="s2">""</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">enable</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span><span class="c1">#On active le bouton</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setEnabled</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+</code></pre></div>
+<u> Mais que font les fonctions window.compare() et window.tirage() qui sont dans la classe MainWindow() </u></p>
+<div class="admonition note">
+<p class="admonition-title">à noter</p>
+<p>window est une instance de MainWindow()</p>
+</div>
+<p><div class="highlight"><span class="filename">Fonction tirage()</span><pre><span></span><code><span class="k">def</span> <span class="nf">tirage</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span><span class="c1">#Pour commencer le jeu</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">comparer</span><span class="o">.</span><span class="n">enable</span><span class="p">()</span><span class="c1">#On active le bouton pour comparer</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">comparer</span><span class="o">.</span><span class="n">setText</span><span class="p">(</span><span class="s2">"Comparer!"</span><span class="p">)</span><span class="c1">#On définit son texte =&gt; et pour la condition au Click</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">tour</span> <span class="o">=</span> <span class="mi">0</span><span class="c1">#Premier tour</span>
+    <span class="n">tirage</span> <span class="o">=</span> <span class="p">[]</span><span class="c1">#Liste de tirage</span>
+    <span class="n">l_color</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">13</span><span class="p">,</span><span class="mi">14</span><span class="p">,</span><span class="mi">15</span><span class="p">]</span><span class="c1">#Contenant tous les chiffres</span>
+    <span class="n">r</span><span class="o">.</span><span class="n">shuffle</span><span class="p">(</span><span class="n">l_color</span><span class="p">)</span><span class="c1">#Mélange de la liste</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span><span class="c1">#Pour 4</span>
+        <span class="n">tirage</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">l_color</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="c1">#On ajoute les 4 premiers termes de l_color mélangé</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">return_tirage</span> <span class="o">=</span> <span class="n">tirage</span><span class="c1">#on place la liste dans une variable self</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Tirer"</span><span class="p">)</span><span class="c1">#Debug</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">jouer</span><span class="o">.</span><span class="n">disable</span><span class="p">()</span><span class="c1">#on désactive le bouton Jouer!</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">draw</span> <span class="o">=</span> <span class="n">Draw</span><span class="p">()</span><span class="c1">#On appelle la classe Draw =&gt; dessine les cercles</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">indication</span> <span class="o">=</span> <span class="n">Indication</span><span class="p">()</span><span class="c1">#On appelle la classe Indication =&gt; dessine les indications sur le tirage</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">layout_g_gauche</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">draw</span><span class="p">)</span><span class="c1">#Mis dans le layout de vertical de gauche</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">layout_d_gauche</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">indication</span><span class="p">)</span><span class="c1">#Mis dans un autre layout vertical de gauche</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Tirage effectué : </span><span class="si">{</span><span class="n">tirage</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span><span class="c1">#Debug</span>
+</code></pre></div>
+Mais! On voit qu'on appelle de nouvelles classes !<br/>
+<strong>Allons les voir!</strong>
+<div class="highlight"><span class="filename">Classe Draw()</span><pre><span></span><code><span class="k">class</span> <span class="nc">Draw</span><span class="p">(</span><span class="n">QWidget</span><span class="p">):</span><span class="c1">#Classe Draw héritant de QWidget utilisant le QPainter pour dessiner</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span><span class="c1">#Initialisation</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span><span class="c1">#Héritage</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">liste_color_palette</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="n">Qt</span><span class="o">.</span><span class="n">white</span><span class="p">,</span> <span class="n">QtGui</span><span class="o">.</span><span class="n">QColor</span><span class="p">(</span><span class="mi">192</span><span class="p">,</span><span class="mi">192</span><span class="p">,</span><span class="mi">192</span><span class="p">),</span> <span class="n">QtGui</span><span class="o">.</span><span class="n">QColor</span><span class="p">(</span><span class="mi">17</span><span class="p">,</span><span class="mi">17</span><span class="p">,</span><span class="mi">17</span><span class="p">),</span> <span class="n">Qt</span><span class="o">.</span><span class="n">black</span><span class="p">,</span>
+        <span class="n">QtGui</span><span class="o">.</span><span class="n">QColor</span><span class="p">(</span><span class="mi">128</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">128</span><span class="p">),</span> <span class="n">QtGui</span><span class="o">.</span><span class="n">QColor</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">128</span><span class="p">),</span><span class="n">Qt</span><span class="o">.</span><span class="n">blue</span><span class="p">,</span> <span class="n">QtGui</span><span class="o">.</span><span class="n">QColor</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">127</span><span class="p">,</span><span class="mi">255</span><span class="p">),</span>
+        <span class="n">QtGui</span><span class="o">.</span><span class="n">QColor</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">205</span><span class="p">,</span> <span class="mi">50</span><span class="p">),</span><span class="n">QtGui</span><span class="o">.</span><span class="n">QColor</span><span class="p">(</span><span class="mi">124</span><span class="p">,</span> <span class="mi">252</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span><span class="n">Qt</span><span class="o">.</span><span class="n">yellow</span><span class="p">,</span> <span class="n">QtGui</span><span class="o">.</span><span class="n">QColor</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span><span class="mi">184</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span> <span class="n">QtGui</span><span class="o">.</span><span class="n">QColor</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span><span class="mi">69</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span><span class="n">QtGui</span><span class="o">.</span><span class="n">QColor</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">147</span><span class="p">),</span>
+        <span class="n">QtGui</span><span class="o">.</span><span class="n">QColor</span><span class="p">(</span><span class="mi">128</span><span class="p">,</span><span class="mi">16</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span> <span class="n">Qt</span><span class="o">.</span><span class="n">red</span>
+        <span class="p">]</span><span class="c1">#On créé une liste avec toutes les couleurs correspondant à celles de la palette</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setFixedSize</span><span class="p">(</span><span class="mi">300</span><span class="p">,</span><span class="mi">700</span><span class="p">)</span><span class="c1">#Taille fixée</span>
+        <span class="c1">#-------------------Cette classe fonctionne avec un couple liste: element/position</span>
+        <span class="c1"># il n'y a pas de lien direct entre le cercle et sa couleur</span>
+        <span class="c1"># c'est un lien hypothétique car grâce à des variables qui définissent:</span>
+        <span class="c1"># le tour (window.tour) et le bouton (window.bouton_locked)</span>
+        <span class="c1"># on associe donc le cercle à un code et une couleur grâce à une liste</span>
+        <span class="c1"># qu'on va itérer de la même manière dans la classe Draw() et l'évènement paintEvent()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">liste_color</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">liste_code</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span><span class="c1">#pour 10 fois =&gt; correspond aux lignes (10)</span>
+            <span class="n">elt1</span> <span class="o">=</span> <span class="p">[]</span><span class="c1">#liste éphémère pour la couleur</span>
+            <span class="n">elt2</span> <span class="o">=</span> <span class="p">[]</span><span class="c1">#liste éphémère pour le code</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span><span class="c1">#pour 4 fois =&gt; correspond aux colonnes (4 par lignes)</span>
+                <span class="n">elt1</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">QtGui</span><span class="o">.</span><span class="n">QColor</span><span class="p">(</span><span class="mi">68</span><span class="p">,</span><span class="mi">68</span><span class="p">,</span><span class="mi">68</span><span class="p">))</span><span class="c1">#on y ajoute la couleur de fond</span>
+                <span class="n">elt2</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">"Faux"</span><span class="p">)</span><span class="c1"># On y ajoute "Faux" pour remplacer dire qu'il n'y a pas de code</span>
+                <span class="c1"># mais qu'on peut y pointer</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">liste_code</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">elt2</span><span class="p">)</span><span class="c1">#on ajoute la liste éphémère du code</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">liste_color</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">elt1</span><span class="p">)</span><span class="c1">#on ajoute la liste éphémère de la couleur</span>
+    <span class="k">def</span> <span class="nf">paintEvent</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">event</span><span class="p">):</span><span class="c1">#évènement pour dessiner</span>
+        <span class="n">paint</span> <span class="o">=</span> <span class="n">QtGui</span><span class="o">.</span><span class="n">QPainter</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span><span class="c1">#On créé un outil pour peindre</span>
+        <span class="n">pen</span> <span class="o">=</span> <span class="n">QtGui</span><span class="o">.</span><span class="n">QPen</span><span class="p">(</span><span class="n">Qt</span><span class="o">.</span><span class="n">black</span><span class="p">)</span><span class="c1">#On créé un pinceau</span>
+        <span class="n">pen</span><span class="o">.</span><span class="n">setWidth</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="c1">#Taille du trait</span>
+        <span class="n">paint</span><span class="o">.</span><span class="n">setPen</span><span class="p">(</span><span class="n">pen</span><span class="p">)</span><span class="c1">#On ajoute le pinceau à l'outil</span>
+        <span class="c1">#Lien hypothétique dû à l'itération identique </span>
+        <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span><span class="c1">#Lignes</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span><span class="c1">#Colonnes</span>
+                <span class="n">paint</span><span class="o">.</span><span class="n">setBrush</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">liste_color</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="n">i</span><span class="p">])</span><span class="c1">#On définit la couleur dans la liste à l'endroit précis</span>
+                <span class="n">paint</span><span class="o">.</span><span class="n">drawEllipse</span><span class="p">(</span><span class="mi">10</span><span class="o">*</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">+</span><span class="mi">50</span><span class="o">*</span><span class="n">i</span><span class="p">,</span><span class="mi">50</span><span class="o">*</span><span class="n">n</span><span class="o">+</span><span class="mi">10</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="n">n</span><span class="p">),</span><span class="mi">50</span><span class="p">,</span><span class="mi">50</span><span class="p">)</span><span class="c1">#On dessine par rapport à la ligne et la colonne</span>
+</code></pre></div>
+Pour la fonction Indication() c'est à peu près la même chose que Draw() à quelques détails
+<div class="highlight"><span class="filename">Classe Indication()</span><pre><span></span><code><span class="k">class</span> <span class="nc">Indication</span><span class="p">(</span><span class="n">QWidget</span><span class="p">):</span><span class="c1">#héritant de QWidget utilisant QPainter pour dessiner</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span><span class="c1">#Initialisation</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span><span class="c1">#Héritage</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">liste_couleur</span> <span class="o">=</span> <span class="p">[]</span><span class="c1"># même nombre de boutons que de couleurs donc une seule liste</span>
+    <span class="k">def</span> <span class="nf">paintEvent</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">event</span><span class="p">):</span><span class="c1">#Evenement dessin</span>
+        <span class="c1">#Routine pour dessiner comme dans Draw()</span>
+        <span class="n">paint</span> <span class="o">=</span> <span class="n">QtGui</span><span class="o">.</span><span class="n">QPainter</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="n">pen</span> <span class="o">=</span> <span class="n">QtGui</span><span class="o">.</span><span class="n">QPen</span><span class="p">(</span><span class="n">QtGui</span><span class="o">.</span><span class="n">QColor</span><span class="p">(</span><span class="mi">68</span><span class="p">,</span><span class="mi">68</span><span class="p">,</span><span class="mi">68</span><span class="p">))</span><span class="c1">#Couleur de fond : gris</span>
+        <span class="n">pen</span><span class="o">.</span><span class="n">setWidth</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="c1">#Taille</span>
+        <span class="n">paint</span><span class="o">.</span><span class="n">setPen</span><span class="p">(</span><span class="n">pen</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">liste_couleur</span><span class="p">)):</span><span class="c1">#On parcourt la longueur de la liste en fonction</span>
+            <span class="c1">#du nombre de ligne de points à mettre</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">liste_couleur</span><span class="p">[</span><span class="n">n</span><span class="p">])):</span>
+                <span class="c1">#On parcourt la longueur de la liste en fonction</span>
+                <span class="c1">#du nombre de points à mettre</span>
+                <span class="n">paint</span><span class="o">.</span><span class="n">setBrush</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">liste_couleur</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="n">i</span><span class="p">])</span><span class="c1">#Couleur correspondant </span>
+                <span class="n">paint</span><span class="o">.</span><span class="n">drawEllipse</span><span class="p">(</span><span class="mi">10</span><span class="o">*</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">+</span><span class="mi">10</span><span class="o">*</span><span class="n">i</span><span class="p">,</span><span class="mi">60</span><span class="o">*</span><span class="n">n</span><span class="o">+</span><span class="mi">30</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span><span class="c1">#Dessin du cercle</span>
+</code></pre></div>
+La fonction comparer():
+<div class="highlight"><span class="filename">Fonction comparer()</span><pre><span></span><code><span class="k">def</span> <span class="nf">compare</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">tentative</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">liste_code</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">tour</span><span class="p">]</span><span class="c1">#on recupère la liste à la position self.tour</span>
+    <span class="c1"># dans l'instance de Draw()</span>
+    <span class="n">choix</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">return_tirage</span><span class="c1">#le tirage fait dans la fonction tirage()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Tour = </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">tour</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span><span class="c1">#Debug</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Choix = </span><span class="si">{</span><span class="n">choix</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span><span class="c1">#Debug</span>
+    <span class="c1">#------------- Creation des messages d'erreurs</span>
+    <span class="n">erreur_cercles</span> <span class="o">=</span> <span class="n">QMessageBox</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+    <span class="n">erreur_cercles</span><span class="o">.</span><span class="n">setWindowTitle</span><span class="p">(</span><span class="s2">"Alert"</span><span class="p">)</span>
+    <span class="n">erreur_cercles</span><span class="o">.</span><span class="n">setText</span><span class="p">(</span><span class="s2">"Veuillez sélectionner une couleur sur toutes les cases!"</span><span class="p">)</span>
+    <span class="n">erreur_couleurs</span> <span class="o">=</span> <span class="n">QMessageBox</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+    <span class="n">erreur_couleurs</span><span class="o">.</span><span class="n">setWindowTitle</span><span class="p">(</span><span class="s2">"Alert"</span><span class="p">)</span>
+    <span class="n">erreur_couleurs</span><span class="o">.</span><span class="n">setText</span><span class="p">(</span><span class="s2">"Vous ne pouvez pas sélectionner 2 fois une même couleur!"</span><span class="p">)</span>
+    <span class="n">place</span> <span class="o">=</span> <span class="mi">0</span><span class="c1">#nombre de chiffres bien placés</span>
+    <span class="n">trouve</span> <span class="o">=</span> <span class="mi">0</span><span class="c1">#nombre de chiffres trouvés</span>
+    <span class="n">stop</span> <span class="o">=</span> <span class="mi">0</span><span class="c1">#cas d'arrête si stop &gt; 0</span>
+    <span class="k">for</span> <span class="n">elt</span> <span class="ow">in</span> <span class="n">tentative</span><span class="p">:</span><span class="c1">#on cherche si dans tentative </span>
+        <span class="c1">#il y a une case sans code = "Faux"</span>
+        <span class="k">if</span> <span class="n">elt</span> <span class="o">==</span> <span class="s2">"Faux"</span><span class="p">:</span>
+            <span class="n">stop</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">if</span> <span class="n">stop</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span> <span class="c1">#si pas d'erreur detecté</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"tentative : </span><span class="si">{</span><span class="n">tentative</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span><span class="c1">#Debug</span>
+        <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span><span class="c1"># donc on sait que tentative a une longueur de 4 dans tous les cas =&gt; range(4)</span>
+            <span class="c1">#on cherche à savoir si 2 éléments sont identiques</span>
+            <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+                <span class="k">if</span> <span class="n">k</span> <span class="o">!=</span> <span class="n">n</span> <span class="ow">and</span> <span class="n">tentative</span><span class="p">[</span><span class="n">n</span><span class="p">]</span> <span class="o">==</span> <span class="n">tentative</span><span class="p">[</span><span class="n">k</span><span class="p">]:</span>
+                    <span class="n">stop</span> <span class="o">=</span> <span class="mi">5</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"stop : </span><span class="si">{</span><span class="n">stop</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">stop</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span><span class="c1">#si pas d'erreur</span>
+        <span class="k">if</span> <span class="n">choix</span> <span class="o">==</span> <span class="n">tentative</span><span class="p">:</span><span class="c1">#le choix est identique donc, tout est trouvé</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">win</span><span class="p">()</span><span class="c1">#cas de victoire</span>
+        <span class="k">else</span><span class="p">:</span><span class="c1">#sinon on cherche le nombre de place et trouve</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">choix</span><span class="p">)):</span>
+                <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">tentative</span><span class="p">)):</span>
+                    <span class="k">if</span> <span class="n">y</span> <span class="o">!=</span><span class="kc">None</span><span class="p">:</span>
+                        <span class="k">if</span> <span class="n">tentative</span><span class="p">[</span><span class="n">y</span><span class="p">]</span> <span class="o">==</span> <span class="n">choix</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span><span class="c1">#chiffre identique</span>
+                            <span class="n">trouve</span> <span class="o">=</span> <span class="n">trouve</span> <span class="o">+</span> <span class="mi">1</span>
+                            <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="n">y</span><span class="p">:</span><span class="c1">#bonne position</span>
+                                <span class="n">place</span> <span class="o">=</span> <span class="n">place</span> <span class="o">+</span> <span class="mi">1</span>
+                                <span class="n">trouve</span> <span class="o">=</span> <span class="n">trouve</span> <span class="o">-</span> <span class="mi">1</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">tour</span> <span class="o">==</span> <span class="mi">9</span><span class="p">:</span><span class="c1"># si c'est le dernier tour</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">loose</span><span class="p">()</span>
+            <span class="k">else</span><span class="p">:</span><span class="c1">#sinon </span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">place_trouve</span><span class="p">(</span><span class="n">trouve</span><span class="p">,</span><span class="n">place</span><span class="p">)</span><span class="c1">#fonction pour dessiner les indications</span>
+                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Trouve = </span><span class="si">{</span><span class="n">trouve</span><span class="si">}</span><span class="s2"> place = </span><span class="si">{</span><span class="n">place</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span><span class="c1">#Debug</span>
+    <span class="k">elif</span> <span class="n">stop</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span><span class="c1">#En cas d'erreur</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tour</span> <span class="o">-=</span> <span class="mi">1</span><span class="c1">#On reste au même tour car +1 -1</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Tour enlevé de 1 = </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">tour</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span><span class="c1">#Debug</span>
+        <span class="k">if</span> <span class="n">stop</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">:</span><span class="c1">#Selon la valeur de stop : différente erreur</span>
+            <span class="n">erreur_cercles</span><span class="o">.</span><span class="n">exec</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">stop</span> <span class="o">==</span> <span class="mi">5</span><span class="p">:</span>
+            <span class="n">erreur_couleurs</span><span class="o">.</span><span class="n">exec</span><span class="p">()</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">tour</span> <span class="o">+=</span> <span class="mi">1</span>
+</code></pre></div>
+<u> Les fonctions appelées lors de comparer() </u></p>
+<p><div class="highlight"><span class="filename">Fonction win(), loose(), place_trouve()</span><pre><span></span><code><span class="k">def</span> <span class="nf">place_trouve</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">trouve</span><span class="p">,</span><span class="n">place</span><span class="p">):</span><span class="c1">#pour les indications</span>
+    <span class="n">liste</span> <span class="o">=</span> <span class="p">[]</span><span class="c1">#liste qui sera ajouté à celle de la classe Indication()</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">trouve</span><span class="p">):</span><span class="c1">#ajout du vert</span>
+        <span class="n">liste</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Qt</span><span class="o">.</span><span class="n">green</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">place</span><span class="p">):</span><span class="c1">#ajout du rouge</span>
+        <span class="n">liste</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Qt</span><span class="o">.</span><span class="n">red</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">liste</span> <span class="o">==</span> <span class="p">[]:</span><span class="c1">#si liste vide on créé un point invisible car couleur de fond</span>
+        <span class="n">liste</span> <span class="o">=</span> <span class="p">[</span><span class="n">QtGui</span><span class="o">.</span><span class="n">QColor</span><span class="p">(</span><span class="mi">68</span><span class="p">,</span><span class="mi">68</span><span class="p">,</span><span class="mi">68</span><span class="p">)]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">liste</span><span class="p">)</span><span class="c1">#Debug</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">indication</span><span class="o">.</span><span class="n">liste_couleur</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">indication</span><span class="o">.</span><span class="n">liste_couleur</span><span class="p">),</span><span class="n">liste</span><span class="p">)</span><span class="c1">#ajout de liste à la dernière place</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">indication</span><span class="o">.</span><span class="n">repaint</span><span class="p">()</span><span class="c1">#repaint</span>
+    <span class="nb">print</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">indication</span><span class="o">.</span><span class="n">liste_couleur</span><span class="p">)</span><span class="c1">#Debug</span>
+
+<span class="k">def</span> <span class="nf">win</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span><span class="c1">#cas de victoire</span>
+    <span class="n">message</span> <span class="o">=</span> <span class="n">QMessageBox</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span><span class="c1">#Message de victoire</span>
+    <span class="n">message</span><span class="o">.</span><span class="n">setWindowTitle</span><span class="p">(</span><span class="s2">"Gagné"</span><span class="p">)</span>
+    <span class="n">message</span><span class="o">.</span><span class="n">setText</span><span class="p">(</span><span class="s2">"Bien joué vous avez trouvé les bons chiffres, vous avez gagné!"</span><span class="p">)</span>
+    <span class="n">message</span><span class="o">.</span><span class="n">exec</span><span class="p">()</span><span class="c1">#executé</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">comparer</span><span class="o">.</span><span class="n">disable</span><span class="p">()</span><span class="c1">#bouton désactivé</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">jouer</span><span class="o">.</span><span class="n">enable</span><span class="p">()</span><span class="c1">#bouton activé</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">jouer</span><span class="o">.</span><span class="n">setText</span><span class="p">(</span><span class="s2">"Rejouer!"</span><span class="p">)</span><span class="c1">#titre défini</span>
+
+<span class="k">def</span> <span class="nf">loose</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span><span class="c1">#cas de défaite</span>
+    <span class="n">message</span> <span class="o">=</span> <span class="n">QMessageBox</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span><span class="c1">#Message de défaite</span>
+    <span class="n">message</span><span class="o">.</span><span class="n">setWindowTitle</span><span class="p">(</span><span class="s2">"Perdu"</span><span class="p">)</span>
+    <span class="n">message</span><span class="o">.</span><span class="n">setText</span><span class="p">(</span><span class="s2">"Dommage pour vous, vous n'avez pas réussi à trouver le chiffre, il ne vous reste plus de coup vous avez perdu"</span><span class="p">)</span>
+    <span class="n">message</span><span class="o">.</span><span class="n">exec</span><span class="p">()</span><span class="c1">#executé</span>
+    <span class="c1">#----Même routine que pour le cas de victoire</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">comparer</span><span class="o">.</span><span class="n">disable</span><span class="p">()</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">jouer</span><span class="o">.</span><span class="n">enable</span><span class="p">()</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">jouer</span><span class="o">.</span><span class="n">setText</span><span class="p">(</span><span class="s2">"Rejouer!"</span><span class="p">)</span>
+</code></pre></div>
+<strong>Puis appel à la fonction Palette <img alt="🤔" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f914.svg" title=":thinking:"/> qui est</strong></p>
+<div class="highlight"><span class="filename">Fonction Palette()</span><pre><span></span><code><span class="k">def</span> <span class="nf">palette</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span><span class="c1">#Fonction qui créé la palette de couleurs</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">Widget</span> <span class="o">=</span> <span class="n">QWidget</span><span class="p">()</span><span class="c1">#On créé le Wigdet qui va accueillir la palette</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">Widget</span><span class="o">.</span><span class="n">setStyleSheet</span><span class="p">(</span><span class="s2">"background-color : #444444"</span><span class="p">)</span><span class="c1">#On définit une couleur de fond</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">Widget</span><span class="o">.</span><span class="n">setGeometry</span><span class="p">(</span><span class="mi">340</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span><span class="mi">320</span><span class="p">,</span><span class="mi">225</span><span class="p">)</span><span class="c1">#Set position du widget et la taille,</span>
+    <span class="c1">#on donne que l'éloignement par rapport à gauche car celui par rapport au haut est fait par le layout</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">color</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'white'</span><span class="p">,</span><span class="s1">'#c0c0c0'</span><span class="p">,</span><span class="s1">'#111111'</span><span class="p">,</span><span class="s1">'black'</span><span class="p">,</span><span class="s1">'#800080'</span><span class="p">,</span> <span class="s1">'#000080'</span><span class="p">,</span><span class="s1">'blue'</span><span class="p">,</span><span class="s1">'#007fff'</span><span class="p">,</span><span class="s1">'#32cd32'</span><span class="p">,</span>
+    <span class="s1">'#7cfc00'</span><span class="p">,</span><span class="s1">'yellow'</span><span class="p">,</span><span class="s1">'#ffb800'</span><span class="p">,</span> <span class="s1">'#ff4500'</span><span class="p">,</span><span class="s1">'#ff1493'</span><span class="p">,</span> <span class="s1">'#801000'</span><span class="p">,</span><span class="s1">'red'</span><span class="p">]</span><span class="c1"># liste de couleur pour la palette</span>
+    <span class="n">layout_couleurs</span> <span class="o">=</span> <span class="n">QGridLayout</span><span class="p">()</span><span class="c1">#Grille qui va accueillir les nouveaux layouts</span>
+    <span class="n">layout_couleurs</span><span class="o">.</span><span class="n">setContentsMargins</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span><span class="c1">#On définit une marge pour chaque élément</span>
+    <span class="n">layout_couleurs</span><span class="o">.</span><span class="n">setHorizontalSpacing</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span><span class="c1">#Espacement horizontal</span>
+    <span class="n">layout_1</span> <span class="o">=</span> <span class="n">QVBoxLayout</span><span class="p">()</span><span class="c1">#QVBoxLayout créé</span>
+    <span class="n">layout_1</span><span class="o">.</span><span class="n">setSpacing</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="c1">#Espacement set</span>
+    <span class="n">layout_2</span> <span class="o">=</span> <span class="n">QVBoxLayout</span><span class="p">()</span><span class="c1">#QVBoxLayout créé</span>
+    <span class="n">layout_2</span><span class="o">.</span><span class="n">setSpacing</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="c1">#Espacement set</span>
+    <span class="n">layout_3</span> <span class="o">=</span> <span class="n">QVBoxLayout</span><span class="p">()</span><span class="c1">#QVBoxLayout créé</span>
+    <span class="n">layout_3</span><span class="o">.</span><span class="n">setSpacing</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="c1">#Espacement set</span>
+    <span class="n">layout_4</span> <span class="o">=</span> <span class="n">QVBoxLayout</span><span class="p">()</span><span class="c1">#QVBoxLayout créé</span>
+    <span class="n">layout_4</span><span class="o">.</span><span class="n">setSpacing</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="c1">#Espacement set</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">16</span><span class="p">):</span><span class="c1">#16 couleurs donc on fait une boucle</span>
+        <span class="n">elt</span> <span class="o">=</span> <span class="n">MyWidget</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="c1">#Pour 16 fois, elt prend la valeur MyWidget() avec en paramètre la valeur de i</span>
+        <span class="n">couleur</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">color</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="c1">#Pour 16 fois, couleur prend la valeur self.color[i]</span>
+        <span class="n">elt</span><span class="o">.</span><span class="n">setAttribute</span><span class="p">(</span><span class="n">Qt</span><span class="o">.</span><span class="n">WA_StyledBackground</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span><span class="c1">#Pour chaque element on active la couleur de fond</span>
+        <span class="n">elt</span><span class="o">.</span><span class="n">setStyleSheet</span><span class="p">(</span><span class="sa">f</span><span class="s2">"background-color : </span><span class="si">{</span><span class="n">couleur</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span><span class="c1">#Style</span>
+        <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">11</span><span class="p">:</span><span class="c1">#en fonction de i on le place dans un layout différent</span>
+            <span class="n">layout_4</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="n">elt</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">7</span><span class="p">:</span>
+            <span class="n">layout_3</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="n">elt</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="p">:</span>
+            <span class="n">layout_2</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="n">elt</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">layout_1</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="n">elt</span><span class="p">)</span>
+        <span class="n">elt</span><span class="o">.</span><span class="n">setFixedSize</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span><span class="mi">50</span><span class="p">)</span><span class="c1">#pour chzque elt, on lui donne une taille fixe</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Palette set!"</span><span class="p">)</span><span class="c1">#Debug</span>
+    <span class="n">layout_couleurs</span><span class="o">.</span><span class="n">addLayout</span><span class="p">(</span><span class="n">layout_1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span><span class="c1">#On ajoute au layout_couleur chaque layout créé</span>
+    <span class="n">layout_couleurs</span><span class="o">.</span><span class="n">addLayout</span><span class="p">(</span><span class="n">layout_2</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">layout_couleurs</span><span class="o">.</span><span class="n">addLayout</span><span class="p">(</span><span class="n">layout_3</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">layout_couleurs</span><span class="o">.</span><span class="n">addLayout</span><span class="p">(</span><span class="n">layout_4</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">Widget</span><span class="o">.</span><span class="n">setLayout</span><span class="p">(</span><span class="n">layout_couleurs</span><span class="p">)</span><span class="c1">#On ajoute le layout_couleur au Widget récipient. </span>
+    <span class="c1">#Le Wigdet sera ajouté après dans la fonction layout_WidgetDroite() </span>
+</code></pre></div>
+<p><u> Dans la boucle, on appelle une classe MyWidget(): </u></p>
+<div class="highlight"><span class="filename">MyWidget()</span><pre><span></span><code><span class="k">class</span> <span class="nc">MyWidget</span><span class="p">(</span><span class="n">QWidget</span><span class="p">):</span><span class="c1">#Classe héritant de QWidget qui créé chaque carré de couleur pour sélectionner la couleur</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">code</span><span class="p">):</span><span class="c1">#Initialisation</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span><span class="c1">#Héritage de QWidget</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">souris</span> <span class="o">=</span> <span class="n">code</span><span class="c1">#Le chiffre passé en paramètre est le code du carré : chiffre pour la comparaison</span>
+    <span class="k">def</span> <span class="nf">mouseReleaseEvent</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">e</span><span class="p">):</span><span class="c1">#Lorsque la souris est cliqué relaché sur le carré</span>
+        <span class="c1">#En lien avec les ronds récipients : abordé en haut</span>
+        <span class="n">window</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">liste_color</span><span class="p">[</span><span class="n">window</span><span class="o">.</span><span class="n">tour</span><span class="p">][</span><span class="n">window</span><span class="o">.</span><span class="n">bouton_locked</span><span class="p">]</span> <span class="o">=</span> <span class="n">window</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">liste_color_palette</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">souris</span><span class="p">]</span>
+        <span class="c1">#self.tour définit la ligne des cercles et self.souris la colonne : </span>
+        <span class="c1">#cet ensemble permet de définir avec précision quel cercle prend quelle couleur</span>
+        <span class="n">window</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">liste_code</span><span class="p">[</span><span class="n">window</span><span class="o">.</span><span class="n">tour</span><span class="p">][</span><span class="n">window</span><span class="o">.</span><span class="n">bouton_locked</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">souris</span><span class="c1">#pareil que la liste</span>
+        <span class="c1"># au dessus mais avec un code</span>
+        <span class="n">window</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">repaint</span><span class="p">()</span><span class="c1"># on re dessine les cercles</span>
+</code></pre></div>
+<blockquote>
+<p>Chaque élément de la classe MyWidget(code) possède une couleur de fond et un code unique mais une taille identique
+le code sert à la comparaison quand on veut savoir si les couleurs choisies sont bonnes (= qui sont en fait des chiffres)</p>
+</blockquote>
+</article>
+</div>
+</div>
+<a class="md-top md-icon" data-md-component="top" hidden="" href="#">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"></path></svg>
+            Retour en haut de la page
+          </a>
+</main>
+<footer class="md-footer">
+<nav aria-label="Pied de page" class="md-footer__inner md-grid">
+<a aria-label="Précédent: Le Fichier .py" class="md-footer__link md-footer__link--prev" href="../1_preparation_du_fichier/" rel="prev">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</div>
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Précédent
+              </span>
+              Le Fichier .py
+            </div>
+</div>
+</a>
+<a aria-label="Suivant: Code final" class="md-footer__link md-footer__link--next" href="../3_code_final/" rel="next">
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Suivant
+              </span>
+              Code final
+            </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../..", "features": ["toc.follow", "toc.integrate", "navigation.top", "navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.indexes"], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}}</script>
+<script src="../../assets/javascripts/bundle.8492ddcf.min.js"></script>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
+</html>
