@@ -1,0 +1,28 @@
+:root > * {
+    color: black;
+    --md-text-font: Arial, Helvetica, sans-serif;
+}
+
+[data-md-color-scheme="default"] {
+    --md-typeset-mark-color: green;
+    --md-primary-fg-color:        #ff0000;
+    --md-typeset-a-color: #1c00b8;
+    color: black;
+    --md-default-bg-color: white;
+    --md-accent-fg-color: #d15dff;
+}
+
+[data-md-color-scheme="slate"] {
+    --md-admonition-bg-color: #000000;
+    --md-admonition-fg-color: #a1a1a1;
+    --md-typeset-mark-color: green;
+    --md-primary-fg-color: #1c00b8;
+    --md-primary-bg-color: black;
+    --md-typeset-a-color: rgb(140, 0, 255);
+    color:white;
+    --md-default-bg-color: #252525;
+    --md-accent-fg-color: #00aeff;
+    --md-typeset-table-color: #060202;
+}
+
+  
